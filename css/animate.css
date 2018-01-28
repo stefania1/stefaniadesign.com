@@ -1,0 +1,319 @@
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+/* ==========================================================================
+bounceInLeft
+========================================================================== */
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+/* ==========================================================================
+bounceInLeft
+========================================================================== */
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
+/* ==========================================================================
+bounceInRight
+========================================================================== */
+@keyframes bounceInRight {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+/* ==========================================================================
+rotateInDownRight
+========================================================================== */
+@keyframes rotateInDownRight {
+  from {
+    transform-origin: right bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: right center;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInDownRight {
+  animation-name: rotateInDownRight;
+}
+/* ==========================================================================
+rollIn
+========================================================================== */
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+/* ==========================================================================
+tada
+========================================================================== */
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+}
+/* ==========================================================================
+fadeInUp
+========================================================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+/* ==========================================================================
+fadeInLeftBig
+========================================================================== */
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig;
+}
+/* ==========================================================================
+spin
+========================================================================== */
+.spin {
+  animation-name: spin;
+   animation-duration: 5000ms;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   /* transform: rotate(3deg); */
+    /* transform: rotate(0.3rad);/ */
+    /* transform: rotate(3grad); */
+    /* transform: rotate(.03turn);  */
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+/* ==========================================================================
+jackInTheBox
+========================================================================== */
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  animation-name: jackInTheBox;
+}
+/* ==========================================================================
+cube
+========================================================================== */
+.cube {
+  animation: firstnudge 5s infinite;
+}
+@keyframes firstnudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 30px);
+  }
+
+  80% {
+    transform: translate(0, -55px);
+  }
+}
+/* ==========================================================================
+triangle
+========================================================================== */
+.triangle {
+  animation: nudge 10s linear infinite alternate;
+  width: 250px;
+}
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(50px, 0);
+  }
+
+  80% {
+    transform: translate(-20px, 0);
+  }
+}
+/* ==========================================================================
+shake-slow
+========================================================================== */
+.shake-slow {
+  display:inline-block;
+  transform-origin:center center
+}
+.shake-freeze,.shake-constant.shake-constant--hover:hover,.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state:paused
+}
+.shake-freeze:hover,.shake-trigger:hover .shake-freeze,.shake-slow:hover,.shake-trigger:hover .shake-slow {
+  animation-play-state:running}@keyframes shake-slow{2%{transform:translate(5px, -8px) rotate(.5deg)}4%{transform:translate(-9px, 8px) rotate(3.5deg)}6%{transform:translate(10px, -7px) rotate(2.5deg)}8%{transform:translate(3px, 10px) rotate(-2.5deg)}10%{transform:translate(-8px, -9px) rotate(3.5deg)}12%{transform:translate(-7px, 3px) rotate(2.5deg)}14%{transform:translate(-6px, 5px) rotate(.5deg)}16%{transform:translate(-6px, -5px) rotate(1.5deg)}18%{transform:translate(3px, 1px) rotate(-.5deg)}20%{transform:translate(5px, 6px) rotate(2.5deg)}22%{transform:translate(9px, 0px) rotate(-2.5deg)}24%{transform:translate(-6px, 4px) rotate(-1.5deg)}26%{transform:translate(-9px, 9px) rotate(-.5deg)}28%{transform:translate(3px, 8px) rotate(1.5deg)}30%{transform:translate(-7px, 4px) rotate(-1.5deg)}32%{transform:translate(-4px, -9px) rotate(-2.5deg)}34%{transform:translate(10px, 8px) rotate(-2.5deg)}36%{transform:translate(6px, 0px) rotate(1.5deg)}38%{transform:translate(-6px, 2px) rotate(2.5deg)}40%{transform:translate(-4px, 10px) rotate(-2.5deg)}42%{transform:translate(2px, 7px) rotate(-.5deg)}44%{transform:translate(-2px, 2px) rotate(.5deg)}46%{transform:translate(0px, 1px) rotate(3.5deg)}48%{transform:translate(7px, -6px) rotate(-1.5deg)}50%{transform:translate(-3px, 3px) rotate(-1.5deg)}52%{transform:translate(6px, -6px) rotate(2.5deg)}54%{transform:translate(10px, 4px) rotate(2.5deg)}56%{transform:translate(-6px, 4px) rotate(-1.5deg)}58%{transform:translate(3px, 3px) rotate(-1.5deg)}60%{transform:translate(-9px, -9px) rotate(-2.5deg)}62%{transform:translate(-2px, -3px) rotate(-.5deg)}64%{transform:translate(-2px, 8px) rotate(-.5deg)}66%{transform:translate(1px, 3px) rotate(.5deg)}68%{transform:translate(2px, 2px) rotate(2.5deg)}70%{transform:translate(10px, -8px) rotate(2.5deg)}72%{transform:translate(-8px, 5px) rotate(3.5deg)}74%{transform:translate(0px, -3px) rotate(-2.5deg)}76%{transform:translate(-4px, -7px) rotate(-2.5deg)}78%{transform:translate(3px, 4px) rotate(-1.5deg)}80%{transform:translate(-4px, 0px) rotate(-2.5deg)}82%{transform:translate(4px, 2px) rotate(2.5deg)}84%{transform:translate(-2px, -5px) rotate(-2.5deg)}86%{transform:translate(0px, 0px) rotate(2.5deg)}88%{transform:translate(-7px, 9px) rotate(-.5deg)}90%{transform:translate(-7px, 8px) rotate(.5deg)}92%{transform:translate(-7px, -1px) rotate(-.5deg)}94%{transform:translate(8px, 8px) rotate(-1.5deg)}96%{transform:translate(4px, -7px) rotate(.5deg)}98%{transform:translate(2px, 7px) rotate(-2.5deg)}0%,100%{transform:translate(0, 0) rotate(0)}}.shake-slow:hover,.shake-trigger:hover .shake-slow,.shake-slow.shake-freeze,.shake-slow.shake-constant{animation-name:shake-slow;animation-duration:5s;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
