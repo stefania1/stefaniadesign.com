@@ -1148,7 +1148,7 @@ green #1FB
 
 /* font-size on html for rem*/
 html {
-  font-family: Texta, sans-serif;
+  /* font-family: Texta, sans-serif; */
   font-size: 17px;
   line-height: 1.5;
 }

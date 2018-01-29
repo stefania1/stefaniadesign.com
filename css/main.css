@@ -1003,6 +1003,11 @@ footer p > a:hover {
     }
 
     #about .img-circle {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 320px) {
+    #about .img-circle {
         width: 75%;
     }
 }
